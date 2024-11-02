@@ -1,1 +1,162 @@
 -- Started Linux Operating System 
+
+-- Commands in the Linux :- 
+
+
+
+ls 
+-- we get all the child
+-- it show all the file and directory in the present your present folder 
+
+pwd 
+-- we get the parent 
+-- shows current directory (print working directory) 
+
+-- There is file Structure in the windows but in the Linux there is Tree Structure 
+
+/ is the root
+
+cd / 
+-- moves to / directory 
+-- cd => change directory
+
+mkdir folder_name 
+-- we can make multiple folders
+
+
+-- making some files 
+touch 1.txt 
+touch 2.txt 
+-- can create files with the name 
+
+
+
+-- Moving and Copying the files 
+-- let we have created following file folder structure 
+
+mkdir newFile 
+
+touch one.txt
+touch two.txt
+
+-- move one.txt to newFile 
+
+mv one.txt this/
+mv one.txt file_source_path file_destination_path/
+
+-- copy file two.txt in some file_destination_path
+
+cp file_source_path file_destination_path/
+
+
+sudo apt update 
+-- it will update the list all the present installed running softwares
+
+upgrade will actually installs all the softwares 
+
+sudo apt upgrade 
+
+
+
+---------------------------
+
+ls -R 
+-- it will show all the present file directory , will it show all the nested directory as well recursively 
+
+touch .file_name 
+-- we can create hidden file named file_name
+-- here the file starting from . will be hidden file and if we put ls Commands then it wont see
+
+-- to see hidden files as well 
+ls -a 
+
+
+-------------------------
+
+history 
+
+-- it will show all the Commands run by you 
+-- Not recomended to put password in the Commands
+
+-- we can print in terminal 
+
+echo shiva 
+-- shiva will be printed 
+
+printf "shiva \n"
+-- shiva and the next line will be printed
+
+-- File Names are Case Sensitive 
+we can create multiple files with the same name using different letters like 
+Shivam.txt
+SHIVAM.txt
+ShivAM.txt 
+
+they all treat as different files
+
+
+---------------------------
+
+ls -l 
+
+-- we get info about the permission allowed for 
+1> User  2> Group  3> People / Public 
+   rw--     r--       r--
+
+
+-- we can change the permission using 
+Chmod Calculator 
+
+Chmod give the number after setting the permission for each (User , Group , People)
+after that :- 
+
+chmod 334 one.txt 
+
+----------------------------
+
+
+top 
+-- it will show the top process which consumes more resources 
+
+q 
+-- for exit 
+
+
+ps 
+-- list the running process 
+
+ps -a 
+-- lists all the process in background and all 
+
+-- to stop the processes 
+
+kill process_id 
+kill 89923
+-- we get the process id from touch Commands and copy the PID 
+
+---------------------------------------
+
+-- for changing regular user to Super User 
+
+sudo su 
+
+-- now the symbol will be # instead $
+
+
+---------------------------------------
+
+
+vim 
+
+-- vim is the text editor 
+-- first install vim  them 
+ 
+
+vim one.txt 
+
+-- press i for start inserting 
+-- press esc to leave insert mode
+
+-- exit => :q
+-- exit with saving => :wq
+
